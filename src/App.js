@@ -3,13 +3,15 @@ import './App.css';
 
 function App(){
 
+  const testArr = ['감자', '고구마', '오이', '가지', '옥수수'];
+
   return (
     <div className='app-style'>
-      <div className='box-style'>감자</div>
-      <div className='box-style'>고구마</div>
-      <div className='box-style'>오이</div>
-      <div className='box-style'>가지</div>
-      <div className='box-style'>옥수수</div>
+      {
+        testArr.map(function(item){
+          return <div className='box-style'>{item}</div>
+        })
+      }
     </div>
   );
 }
