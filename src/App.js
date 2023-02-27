@@ -7,11 +7,12 @@ function App(){
 
   return (
     <div className='app-style'>
-      {
-        testArr.map(function(item){
+    {/* {testArr.map(function(item){
           return <div className='box-style'>{item}</div>
-        })
-      }
+        })} */}
+        {testArr.map ((item) => {
+          return <div className='box-style'>{item}</div>;
+        })}
     </div>
   );
 }
