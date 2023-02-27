@@ -7,12 +7,19 @@ function App(){
 
   return (
     <div className='app-style'>
-    {/* {testArr.map(function(item){
-          return <div className='box-style'>{item}</div>
-        })} */}
-        {testArr.map ((item) => {
-          return <div className='box-style'>{item}</div>;
-        })}
+    {
+      testArr.filter(function(item){
+        return item !== "오이";
+      })
+      .map(function (item) {
+        return <div className='box-style'>{item}</div>
+      })
+    }
+    {/* {
+      testArr.filter((item)=>{
+        return item !== "가지";
+      })
+    } */}
     </div>
   );
 }
